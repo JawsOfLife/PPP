@@ -1,0 +1,8 @@
+printvec: printvec.o
+	g++ -std=c++11 -g -o printvec printvec.o
+
+printvec.o: printvec.cpp
+	g++ -std=c++11 -g -c printvec.cpp
+
+clean:
+	rm -f printvec printvec.o

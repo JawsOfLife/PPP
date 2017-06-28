@@ -1,0 +1,8 @@
+vecMath: vecMath.o
+	g++ -std=c++11 -g -o vecMath vecMath.o
+
+vecMath.o: vecMath.cpp
+	g++ -std=c++11 -g -c vecMath.cpp
+
+clean:
+	rm -f vecMath vecMath.o

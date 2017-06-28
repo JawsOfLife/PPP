@@ -1,0 +1,8 @@
+sortVec: sortVec.o
+	g++ -std=c++11 -g -o sortVec sortVec.o
+
+sortVec.o: sortVec.cpp
+	g++ -std=c++11 -g -c sortVec.cpp
+
+clean:
+	rm -f sortVec sortVec.o

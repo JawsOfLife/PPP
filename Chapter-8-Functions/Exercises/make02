@@ -1,0 +1,8 @@
+reverse_vec: reverse_vec.o
+	g++ -std=c++11 -g -o reverse_vec reverse_vec.o
+
+reverse_vec.o: reverse_vec.cpp
+	g++ -std=c++11 -g -c reverse_vec.cpp
+
+clean:
+	rm -f reverse_vec reverse_vec.o
